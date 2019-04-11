@@ -14,11 +14,11 @@ const initialState = {
 function handleActions(state = initialState, action) {
   switch (action.type) {
     case FETCHING_QUOTE:
-      return Object.assign({}, state, { isFetching: true, error: false });
+      return Object.assign({}, state, { isFetching: true, error: null });
     case FETCH_QUOTE_FAILURE:
       return Object.assign({}, state, { isFetching: false, error: action.error });
     case FETCH_QUOTE_SUCCESS:
-      return Object.assign({}, state, { isFetching: false, author: action.author, quote: action.quote });
+      return Object.assign({}, state, { isFetching: false, error: null, author: action.author, quote: action.quote });
     default:
       return state;
   }
