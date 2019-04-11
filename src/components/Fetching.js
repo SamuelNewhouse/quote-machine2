@@ -3,7 +3,10 @@ import React from 'react';
 const Fetching = () => {
   return (
     <>
-      <h2>Getting Quote.</h2>
+      <div className="spinner-border" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+      <p>...getting quote...</p>
     </>
   )
 }
