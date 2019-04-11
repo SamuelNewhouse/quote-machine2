@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchQuote } from '../actions';
 
-const NewQuote = props => {
+const NewQuote = ({ fetchQuote, value = "New Quote" }) => {
   return (
-    <button id="new-quote" onClick={props.fetchQuote}>New Quote</button>
+    <button id="new-quote" onClick={fetchQuote}>{value}</button>
   )
 }
 
