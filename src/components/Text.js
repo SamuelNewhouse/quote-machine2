@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Text = (props) => {
   return (
-    <h2 id="text">Quote: {props.quote}</h2>
+    <p id="text">{props.quote}</p>
   )
 }
 
