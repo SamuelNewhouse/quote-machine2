@@ -4,9 +4,11 @@ import Author from './Author';
 import Text from './Text';
 import NewQuote from './NewQuote';
 import TweetQuote from './TweetQuote';
+import Error from './Error';
+import Fetching from './Fetching';
 import { fetchQuote } from '../actions';
 
-const loaded = () => {
+const normalView = () => {
   return (
     <>
       <Text />
@@ -17,6 +19,14 @@ const loaded = () => {
   )
 }
 
+const getView = props => {
+  if (props.error)
+    return <Error />
+  if (props.isFetching)
+    return <Fetching />
+
+  return normalView();
+}
 
 class QuoteBox extends Component {
   componentDidMount() {
@@ -24,12 +34,12 @@ class QuoteBox extends Component {
   }
 
   render() {
-  return (
-    <div id="quote-box">
-      {loaded()}
-    </div>
-  )
-}
+    return (
+      <div id="quote-box">
+        {getView(this.props)}
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = state => {
