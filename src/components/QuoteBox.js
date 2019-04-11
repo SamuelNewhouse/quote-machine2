@@ -7,12 +7,16 @@ import TweetQuote from './TweetQuote';
 import Error from './Error';
 import Fetching from './Fetching';
 import { fetchQuote } from '../actions';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/style.css'
 
 const normalView = () => {
   return (
     <>
-      <Text />
-      <Author />
+      <blockquote className="blockquote">
+        <Text />
+        <Author />
+      </blockquote>
       <NewQuote />
       <TweetQuote />
     </>
