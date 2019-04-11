@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const Author = props => {
+  const author = props.author;
   return (
-    <h2 id="author">Author: {props.author}</h2>
+    <footer className="blockquote-footer"><cite id="author" title={author}>{author}</cite></footer>
   )
 }
 
