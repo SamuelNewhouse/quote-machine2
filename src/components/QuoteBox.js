@@ -4,6 +4,7 @@ import Author from './Author';
 import Text from './Text';
 import NewQuote from './NewQuote';
 import TweetQuote from './TweetQuote';
+import GoogleQuote from './GoogleQuote';
 import Error from './Error';
 import Fetching from './Fetching';
 import { fetchQuote } from '../actions';
@@ -13,12 +14,15 @@ import '../styles/style.scss'
 const normalView = () => {
   return (
     <>
-      <blockquote className="blockquote">
+      <blockquote className="blockquote p-3">
         <Text />
         <Author />
       </blockquote>
-      <NewQuote />
-      <TweetQuote />
+      <span className="d-flex p-3">
+        <TweetQuote />
+        <GoogleQuote />
+        <NewQuote />
+      </span>
     </>
   )
 }
