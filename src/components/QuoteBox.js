@@ -25,9 +25,18 @@ const normalView = () => {
 
 const getView = props => {
   if (props.error)
-    return <Error />
+    return (
+      <blockquote className="blockquote p-3">
+        <Error />
+      </blockquote>
+    )
+
   if (props.isFetching)
-    return <Fetching />
+    return (
+      <blockquote className="blockquote p-3">
+        <Fetching />
+      </blockquote>
+    )
 
   return normalView();
 }
