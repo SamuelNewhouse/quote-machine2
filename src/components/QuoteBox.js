@@ -8,7 +8,7 @@ import Error from './Error';
 import Fetching from './Fetching';
 import { fetchQuote } from '../actions';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/style.css'
+import '../styles/style.scss'
 
 const normalView = () => {
   return (
