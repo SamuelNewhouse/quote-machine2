@@ -4,7 +4,12 @@ import { fetchQuote } from '../actions';
 
 const NewQuote = ({ fetchQuote, value = "New Quote" }) => {
   return (
-    <button id="new-quote" onClick={fetchQuote}>{value}</button>
+    <span className="flex-grow-1 text-right">
+      <button className="hovertip btn btn-dark" id="new-quote" onClick={fetchQuote}>
+        {value}
+        <span className="hovertiptext hovertip-right">Get new quote.</span>
+      </button>
+    </span>
   )
 }
 
