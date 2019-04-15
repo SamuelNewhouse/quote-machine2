@@ -4,7 +4,7 @@ import NewQuote from './NewQuote'
 const Error = () => {
   return (
     <>
-      <h2><strong>Error</strong> getting quote from <em>en.wikiquote.org</em>.</h2>
+      <p><strong>Error</strong> getting quote from <em>en.wikiquote.org</em>.</p>
       <NewQuote value="Try Again" />
     </>
   )
