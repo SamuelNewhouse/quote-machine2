@@ -9,7 +9,7 @@ const TweetQuote = ({ author, quote }) => {
   return (
     <a className="hovertip btn btn-dark ml-2" id="tweet-quote" href={googleURL} target="_blank" rel="noopener noreferrer">
       <img src={googleLogo} alt="Google this quote."></img>
-      <span className="hovertiptext">Google this quote.</span>
+      <span className="hovertiptext rounded">Google this quote.</span>
     </a>
   )
 }

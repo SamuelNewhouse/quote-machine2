@@ -7,7 +7,7 @@ const NewQuote = ({ fetchQuote, value = "New Quote" }) => {
     <span className="flex-grow-1 text-right">
       <button className="hovertip btn btn-dark" id="new-quote" onClick={fetchQuote}>
         {value}
-        <span className="hovertiptext hovertip-right">Get new quote.</span>
+        <span className="hovertiptext hovertip-right rounded">Get new quote.</span>
       </button>
     </span>
   )
