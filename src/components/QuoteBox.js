@@ -7,6 +7,7 @@ import TweetQuote from './TweetQuote';
 import GoogleQuote from './GoogleQuote';
 import Error from './Error';
 import Fetching from './Fetching';
+import BlockQuote from './BlockQuote';
 import { fetchQuote } from '../actions';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/style.scss'
@@ -14,11 +15,11 @@ import '../styles/style.scss'
 const normalView = () => {
   return (
     <>
-      <blockquote className="blockquote p-3">
+      <BlockQuote>
         <Text />
         <Author />
-      </blockquote>
-      <span className="d-flex p-3">
+      </BlockQuote>
+      <span className="d-flex px-3">
         <TweetQuote />
         <GoogleQuote />
         <NewQuote />
@@ -30,16 +31,16 @@ const normalView = () => {
 const getView = props => {
   if (props.error)
     return (
-      <blockquote className="blockquote p-3">
+      <BlockQuote>
         <Error />
-      </blockquote>
+      </BlockQuote>
     )
 
   if (props.isFetching)
     return (
-      <blockquote className="blockquote p-3">
+      <BlockQuote>
         <Fetching />
-      </blockquote>
+      </BlockQuote>
     )
 
   return normalView();
