@@ -5,8 +5,11 @@ $text-link: #44b1c8;
 $buttom-link: #a39f77;
 $link-hover: #615d3a;
 
+html {
+  height: 100%;
+}
 body {
-  background: $secondary-dark;
+  background: linear-gradient($background, #000);
   color: #000;
 }
 
