@@ -25,9 +25,9 @@ let minLength = 10;
 let maxLength = 300;
 let numericLimit = 0.1; // Some "quotes" are just dates and times. Those are filtered out.
 
-RandomWikiquote.setMinLength = (min) => minLength = min;
-RandomWikiquote.setMaxLength = (max) => maxLength = max;
-RandomWikiquote.setNumericLimit = (percentage) => numericLimit = percentage;
+RandomWikiquote.setMinLength = min => minLength = min;
+RandomWikiquote.setMaxLength = max => maxLength = max;
+RandomWikiquote.setNumericLimit = percentage => numericLimit = percentage;
 
 const isQuoteValid = quote => {
   if (!quote)
@@ -41,7 +41,7 @@ const isQuoteValid = quote => {
   return true;
 };
 
-const ajaxGet = (url) => {
+const ajaxGet = url => {
   return new Promise((resolve, reject) => {
     const xmlhttp = new XMLHttpRequest();
 
@@ -178,8 +178,8 @@ const getRandomQuote = () => {
     const chooseQuote = quotes => ({ title: quotes.titles, quote: randomQuote(quotes) });
 
     let numRetry = 0;
-    const checkRetry = (reason) => {
-      console.log(reason + " Retrying...");
+    const checkRetry = reason => {
+      console.log(reason);
 
       if (++numRetry > RETRY_LIMIT)
         reject("Retry limit reached.");
