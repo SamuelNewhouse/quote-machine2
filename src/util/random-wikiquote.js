@@ -9,6 +9,8 @@
  * the name of the show, movie, game, book, etc. the quote is from.
  *
  * https://github.com/SamuelNewhouse/random-wikiquote
+ *
+ * Based on https://github.com/natetyler/wikiquotes-api/
  */
 const RandomWikiquote = {};
 
