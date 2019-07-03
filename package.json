@@ -5,11 +5,11 @@
   "dependencies": {
     "bootstrap": "*",
     "gh-pages": "^2.0.1",
-    "node-sass": "*",
+    "node-sass": "^4.12.0",
     "react": "*",
     "react-dom": "*",
-    "react-redux": "^7.0.2",
-    "react-scripts": "*",
+    "react-redux": "^7.1.0",
+    "react-scripts": "^3.0.1",
     "redux": "*",
     "redux-thunk": "*"
   },
