@@ -1,17 +1,19 @@
 {
-  "main.css": "./static/css/main.47b61cbd.chunk.css",
-  "main.js": "./static/js/main.b494d18e.chunk.js",
-  "main.js.map": "./static/js/main.b494d18e.chunk.js.map",
-  "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
-  "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
-  "static/css/2.5c607276.chunk.css": "./static/css/2.5c607276.chunk.css",
-  "static/js/2.4ed65eaa.chunk.js": "./static/js/2.4ed65eaa.chunk.js",
-  "static/js/2.4ed65eaa.chunk.js.map": "./static/js/2.4ed65eaa.chunk.js.map",
-  "index.html": "./index.html",
-  "precache-manifest.75cb29510025e875befe76022e7e69c4.js": "./precache-manifest.75cb29510025e875befe76022e7e69c4.js",
-  "service-worker.js": "./service-worker.js",
-  "static/css/2.5c607276.chunk.css.map": "./static/css/2.5c607276.chunk.css.map",
-  "static/css/main.47b61cbd.chunk.css.map": "./static/css/main.47b61cbd.chunk.css.map",
-  "static/media/google-logo.svg": "./static/media/google-logo.72232123.svg",
-  "static/media/twitter-logo.svg": "./static/media/twitter-logo.d498cedd.svg"
+  "files": {
+    "main.css": "./static/css/main.942b4f2e.chunk.css",
+    "main.js": "./static/js/main.4c42e04c.chunk.js",
+    "main.js.map": "./static/js/main.4c42e04c.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/css/2.545c6387.chunk.css": "./static/css/2.545c6387.chunk.css",
+    "static/js/2.504abbd4.chunk.js": "./static/js/2.504abbd4.chunk.js",
+    "static/js/2.504abbd4.chunk.js.map": "./static/js/2.504abbd4.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.e0f69219a7e14cc881632fde30d28bdd.js": "./precache-manifest.e0f69219a7e14cc881632fde30d28bdd.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.545c6387.chunk.css.map": "./static/css/2.545c6387.chunk.css.map",
+    "static/css/main.942b4f2e.chunk.css.map": "./static/css/main.942b4f2e.chunk.css.map",
+    "static/media/google-logo.svg": "./static/media/google-logo.72232123.svg",
+    "static/media/twitter-logo.svg": "./static/media/twitter-logo.d498cedd.svg"
+  }
 }
